@@ -1,5 +1,7 @@
 import Head from "next/head";
+import Link from "next/link";
 import type { NextPage } from "next";
+
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -9,7 +11,13 @@ const Home: NextPage = () => {
         <title>im not desperate i swear ;-;</title>
         <meta name="keywords" content="pls" />
       </Head>
-      <div className={styles.container}>pls?</div>;
+      <div className={styles.container}>
+        <b>pls?</b>
+        <Link href="/resume">
+          <a>here resume</a>
+        </Link>
+      </div>
+      ;
     </div>
   );
 };
